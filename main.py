@@ -16,7 +16,7 @@ genai.configure(api_key=api_key)
 
 # 2. MODEL: Use a valid model name (e.g., gemini-1.5-flash)
 # Note: 'files/...' references expire after 48 hours usually. Ensure the file exists.
-FILE_ID = "files/fzfborpiwvwg" 
+FILE_ID = "files/2e6egthxnl2c" 
 
 # @app.route('/generate_quiz', methods=['POST'])
 @functions_framework.http
@@ -53,7 +53,7 @@ def generate_quiz(request):
                 }}
             ],
             "answer_key": {{
-                "1": "A",
+                "1": "A",-
                 "2": "B"
             }}
         }}
